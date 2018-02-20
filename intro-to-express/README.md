@@ -65,4 +65,4 @@ app.set('view engine', 'ejs');
 
 All these extensions to Express are [middleware](http://expressjs.com/en/guide/using-middleware.html), which is a way of adding functionality to the server.
 
-Please look at the [code](https://github.com/rob0t7/lhl-lectures/intro-to-express) we wrote in class to get a full Express server configured with some middleware to use EJS templates, server static files in a public directory and display some useful logs with morgan.
+Please look at the [code](https://github.com/rob0t7/lhl-lectures/tree/master/intro-to-express) we wrote in class to get a full Express server configured with some middleware to use EJS templates, server static files in a public directory and display some useful logs with morgan.
