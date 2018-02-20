@@ -1,0 +1,27 @@
+{
+  "name": "intro-to-express",
+  "version": "1.0.0",
+  "description": "Intro to Express.js for LHL students.",
+  "main": "server.js",
+  "repository": "https://github.com/rob0t7/lhl-lectures",
+  "author": "Robert Jackiewicz <rob@jackiewicz.ca>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "slug": "^0.9.1",
+    "uuid": "^3.2.1"
+  }
+}

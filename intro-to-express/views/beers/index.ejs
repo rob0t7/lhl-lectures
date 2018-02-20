@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/styles/application.css">
+    <title>LHL Express Demo - Beer List</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>LHL Beer List</h1>
+
+      <div>
+        <form action="/beers" method="get">
+          <div class="form-group">
+            <label for="style">Style</label>
+            <select id="style" name="style" class="form-control">
+              <option value="">All</option>
+              <% styles.forEach( style => { %>
+                <option value="<%= style %>"><%= style%></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Filter">
+          </div>
+        </form>
+
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Brewery</th>
+            <th>Name</th>
+            <th>Style</th>
+            <th>ABV</th>
+            <th>Logo</th>
+            <th></th>
+        </thead>
+        <tbody>
+          <% beers.forEach( beer => { %>
+            <tr>
+              <td><%= beer.brewery %></td>
+              <td><%= beer.name %></td>
+              <td><%= beer.style %></td>
+              <td><%= beer.abv %></td>
+              <td><img class="img-thumbnail" width="200" height="200" src="<%= beer.logo %>" alt="<%= `${beer.name} logo` %>"></td>
+              <td><a href="/beers/<%= beer.slug %>">View</a></td>
+            </tr>
+          <% }) %>
+          <tr>
+            <td colSpan="6" style="text-align: center"><a class="btn btn-primary" href="/beers/new">Add New Beer</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

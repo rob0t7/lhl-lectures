@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link >
+    <title>LHL Express Demo - Beer List</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1><%= beer.name %> Details</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <dl>
+            <dt>Style</dt>
+            <dd><%= beer.style %></dd>
+            <dt>ABV</dt>
+            <dd><%= beer.abv %></dd>
+          </dl>
+        </div>
+        <div class="col-md-6">
+          <img style="width: 100%;" src="<%= beer.logo %>">
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
