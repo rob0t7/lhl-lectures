@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Brewery</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% beers.forEach( function (beer) { %>
+          <tr>
+            <td><%- beer.name %></td>
+            <td><%= beer.brewery %></td>
+          </tr>
+          <% }) %>
+          <tr>
+            <td colSpan="2">
+              <a href="/beers/new">New Beer</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

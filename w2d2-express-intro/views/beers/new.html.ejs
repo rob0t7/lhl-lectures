@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>New Beer Form</h1>
+    <form action="/beers" method="POST">
+      <ul style="color: red; background: pink">
+        <%  errors.forEach(function(error) { %>
+          <li><%= error %></li>
+        <% }) %>
+      </ul>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+      </div>
+      <div>
+        <label for="brewery">Brewery</label>
+        <input id="brewery" type="text" name="brewery">
+      </div>
+      <div>
+        <input type="submit" value="Create Beer">
+      </div>
+    </form>
+  </body>
+</html>
