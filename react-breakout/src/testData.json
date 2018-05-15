@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Lone Pine",
+      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2evrjCgBFyr_I4tD_w8fo296afoIwzc28wEoxFpTkblXPsrHQ",
+      "priceCents": 340,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "name": "Lug Tread 4 Pack",
+      "imageURL": "http://www.lcbo.com/content/dam/lcbo/products/169334.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "priceCents": 1650,
+      "quantity": 1
+    }
+  ],
+  "subtotalCents": 2330,
+  "shippingCents": 1200,
+  "taxCents": 459
+}
