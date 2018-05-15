@@ -9,13 +9,22 @@ import Items from "./Items";
 
 const ShoppingCartWrapper = glamorous.div({
   display: "grid",
-
   gridTemplateAreas: `
-    "Title TopActions"
-    "Items Items"
-    ". Summary"
-    ". BottomActions"
-  `
+    "Title"
+    "Summary"
+    "TopActions"
+    "Items"
+    "BottomActions"
+  `,
+
+  ["@media screen and (min-width: 768px)"]: {
+    gridTemplateAreas: `
+      "Title TopActions"
+      "Items Items"
+      ". Summary"
+      ". BottomActions"
+    `
+  }
 });
 
 const TopActions = glamorous.div({
@@ -31,6 +40,7 @@ const ShoppingCart = ({
   subtotalCents,
   shippingCents,
   taxCents,
+  totalCents,
   onQuantityChange
 }) => (
   <ShoppingCartWrapper>
@@ -40,9 +50,14 @@ const ShoppingCart = ({
       <Button href="#checkout">Checkout</Button>
     </TopActions>
 
-    <Items />
+    <Items items={items} onQuantityChange={onQuantityChange} />
 
-    <Summary />
+    <Summary
+      subtotalCents={subtotalCents}
+      shippingCents={shippingCents}
+      taxCents={taxCents}
+      totalCents={totalCents}
+    />
 
     <BottomActions>
       <Button href="#checkout">Checkout</Button>

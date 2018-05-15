@@ -12,8 +12,9 @@ const Wrapper = glamorous.div({
 
 const Items = ({ items, onQuantityChange }) => (
   <Wrapper>
-    <Item />
-    <Item />
+    {items.map(item => (
+      <Item key={item.id} {...item} onQuantityChange={onQuantityChange} />
+    ))}
   </Wrapper>
 );
 

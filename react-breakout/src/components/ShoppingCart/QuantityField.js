@@ -18,17 +18,24 @@ const RightButton = glamorous(Button)({
   borderBottomRightRadius: "5px"
 });
 
-class QuantityField extends React.Component {
-  render() {
-    const { css } = this.props;
-    return (
-      <Wrapper css={css}>
-        <LeftButton>-</LeftButton>
-        <div style={{ textAlign: "center" }}>1</div>
-        <RightButton onClick={this.handleIncrease}>+</RightButton>
-      </Wrapper>
-    );
-  }
-}
+const QuantityField = ({ css, id, quantity, onQuantityChange }) => (
+  <Wrapper css={css}>
+    <LeftButton
+      onClick={event => {
+        onQuantityChange(id, quantity - 1);
+      }}
+    >
+      -
+    </LeftButton>
+    <div style={{ textAlign: "center" }}>{quantity}</div>
+    <RightButton
+      onClick={event => {
+        onQuantityChange(id, quantity + 1);
+      }}
+    >
+      +
+    </RightButton>
+  </Wrapper>
+);
 
 export default QuantityField;

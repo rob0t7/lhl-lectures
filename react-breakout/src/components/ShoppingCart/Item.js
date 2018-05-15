@@ -19,15 +19,26 @@ const Wrapper = glamorous.div({
   marginBottom: ".5rem"
 });
 
-const Item = () => (
+const Item = ({
+  id,
+  name,
+  priceCents,
+  quantity,
+  totalCents,
+  onQuantityChange
+}) => (
   <Wrapper>
-    <Div gridArea="Name">product</Div>
+    <Div gridArea="Name">{name}</Div>
     <Div gridArea="Price" textAlign="right">
-      {numeral(1000 / 100).format(MONEY_FORMAT)}
+      {numeral(priceCents / 100).format(MONEY_FORMAT)}
     </Div>
-    <QuantityField />
+    <QuantityField
+      id={id}
+      quantity={quantity}
+      onQuantityChange={onQuantityChange}
+    />
     <Div gridArea="Total" textAlign="right">
-      {numeral(1000 * 1 / 100).format(MONEY_FORMAT)}
+      {numeral(totalCents / 100).format(MONEY_FORMAT)}
     </Div>
   </Wrapper>
 );

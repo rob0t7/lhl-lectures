@@ -5,17 +5,33 @@ export const changeQuantity = (shoppingCart, productId, quantity) => {
     return id === productId;
   });
 
-  const item = { ...items[itemIndex], quantity };
+  let newItems;
+  if (quantity > 0) {
+    const item = {
+      ...items[itemIndex],
+      quantity,
+      totalCents: items[itemIndex].priceCents * quantity
+    };
 
-  const newItems = [
-    ...items.slice(0, itemIndex),
-    item,
-    ...items.slice(itemIndex + 1)
-  ];
+    newItems = [
+      ...items.slice(0, itemIndex),
+      item,
+      ...items.slice(itemIndex + 1)
+    ];
+  } else {
+    newItems = [...items.slice(0, itemIndex), ...items.slice(itemIndex + 1)];
+  }
+
   const subtotalCents = newItems.reduce((total, item) => {
-    return total + item.quantity * item.priceCents;
+    return total + item.totalCents;
   }, 0);
   const taxCents = subtotalCents + shoppingCart.shippingCents;
-
-  return { ...shoppingCart, items: newItems, subtotalCents, taxCents };
+  const totalCents = subtotalCents + shoppingCart.shippingCents + taxCents;
+  return {
+    ...shoppingCart,
+    items: newItems,
+    subtotalCents,
+    taxCents,
+    totalCents
+  };
 };
