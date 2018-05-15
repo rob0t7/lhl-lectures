@@ -1,7 +1,7 @@
 # Intro to HTTP Server Programming with Node
 
 Project Code available at
-https://github.com/rob0t7/lhl-lectures/w2d2-intro-to-express
+https://github.com/rob0t7/lhl-lectures/tree/master/w2d2-express-intro
 
 Today we will start our journey become full stack web
 developers. What does *stack* mean? All web apps are composed by a
