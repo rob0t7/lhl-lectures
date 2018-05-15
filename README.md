@@ -6,5 +6,5 @@ Labs](https://lighthouselabs.com).
 ## Intro to Web Programming
 
 * [Intro to
-  Express.js](https://github.com/rob0t7/lhl-lectures/intro-to-express) -
+  Express.js](https://github.com/rob0t7/lhl-lectures/tree/master/intro-to-express) -
   Learn the basics of creating an app using Express.js.
