@@ -7,7 +7,7 @@ Agenda
 3. Abstract Checkout
 
 Class code located at
-(https://github.com/rob0t7/lhl-lectures/tree/master/domains-models-and-activerecord/partTwo)
+(https://github.com/rob0t7/lhl-lectures/tree/master/domain-models-and-activerecord/partTwo)
 
 ## Add Order Domain Model
 
