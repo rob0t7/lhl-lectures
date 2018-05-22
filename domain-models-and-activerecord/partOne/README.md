@@ -14,6 +14,8 @@ Agenda
 Class code located at
 (https://github.com/rob0t7/lhl-lectures/tree/master/domains-models-and-activerecord)
 
+![alt Domain Model Diagram](https://github.com/rob0t7/lhl-lectures/blob/master/domain-models-and-activerecord/partOne/domain-model.svg)
+
 ## What is Domain Modeling
 
 A domain model is a system of abstractions that describes selected
