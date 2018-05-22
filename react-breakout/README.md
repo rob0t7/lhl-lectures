@@ -1,5 +1,7 @@
 # React Practice
 
+Code is located at https://github.com/rob0t7/lhl-lectures/tree/master/react-breakout.
+
 Today for the breakout we practices thinking in components and hook
 data + callbacks to the different components. We also looked at how to
 model the data need for each component.
