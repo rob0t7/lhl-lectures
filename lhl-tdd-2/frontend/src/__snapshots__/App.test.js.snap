@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> .render() renders the <NewBeerForm/> if showForm === true 1`] = `
+<div>
+  <h1>
+    Beer App
+  </h1>
+  <a
+    href="#"
+    onClick={[Function]}
+  >
+    New Beer
+  </a>
+  <NewBeerForm
+    onSubmit={[Function]}
+  />
+  <BeerTable
+    beers={Array []}
+  />
+</div>
+`;
+
+exports[`<App/> .render() renders the beer table when beers exist on the state 1`] = `
+<div>
+  <h1>
+    Beer App
+  </h1>
+  <a
+    href="#"
+    onClick={[Function]}
+  >
+    New Beer
+  </a>
+  <BeerTable
+    beers={
+      Array [
+        Object {
+          "id": 1,
+          "name": "Lone Pine",
+          "style": "IPA",
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`<App/> .render() renders the component correctly based of off the default state 1`] = `
+<div>
+  <h1>
+    Beer App
+  </h1>
+  <a
+    href="#"
+    onClick={[Function]}
+  >
+    New Beer
+  </a>
+  <BeerTable
+    beers={Array []}
+  />
+</div>
+`;

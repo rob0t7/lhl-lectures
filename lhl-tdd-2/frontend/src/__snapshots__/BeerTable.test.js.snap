@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BeerTable/> .render() renders the proper beer table based on the props 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Style
+      </th>
+      <th>
+        ABV
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <BeerTableRow
+      id={1}
+      key="1"
+      name="Lone Pine"
+      style="American IPA"
+    />
+    <BeerTableRow
+      id={2}
+      key="2"
+      name="Lug Tread"
+      style="Kolsch"
+    />
+  </tbody>
+</table>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewBeerForm/> .render() renders a new form 1`] = `
+<form
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div>
+    <label
+      labelFor="name"
+    >
+      Name
+    </label>
+    <input
+      id="name"
+      name="name"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      labelFor="style"
+    >
+      Style
+    </label>
+    <input
+      id="style"
+      name="style"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div>
+    <label
+      labelFor="abv"
+    >
+      ABV
+    </label>
+    <input
+      id="abv"
+      name="abv"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    type="submit"
+  >
+    Create Beer
+  </button>
+</form>
+`;
