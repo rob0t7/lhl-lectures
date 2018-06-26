@@ -7,7 +7,7 @@ Agenda
 3. Abstract Checkout
 
 Class code located at
-(https://github.com/rob0t7/lhl-lectures/tree/master/domains-models-and-activerecord/partTwo)
+(https://github.com/rob0t7/lhl-lectures/tree/master/domain-models-and-activerecord/partTwo)
 
 ## Add Order Domain Model
 
@@ -25,7 +25,7 @@ specific to the checkout workflow, like sending payment receipts.
 Below is a sequence diagram that explains the Checkout#process_payment
 method:
 
-
+![alt sequence diagram](https://github.com/rob0t7/lhl-lectures/blob/master/domain-models-and-activerecord/partTwo/sequence.png)
 ## References
 
 Terms:
