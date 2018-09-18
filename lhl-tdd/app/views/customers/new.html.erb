@@ -1,0 +1,19 @@
+<h1>Add Customer</h1>
+
+<%= form_for @customer do |f| %>
+  <div>
+    <%= f.label :name%>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :birthday %>
+    <%= f.date_select :birthday, end_year: 1900, start_year: Date.current.year %>
+  </div>
+  <div>
+    <%= f.submit "Create Customer"%>
+  </div>
+<% end %>

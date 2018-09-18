@@ -1,0 +1,23 @@
+<h1>Customers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+        <td><%= customer.email %></td>
+      </tr>
+    <% end %>
+    <tr>
+      <td colspan="2">
+        <%= link_to "Add Customer", new_customer_path%>
+      </td>
+    </tr>
+  </tbody>
+</table>
