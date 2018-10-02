@@ -5,6 +5,7 @@ features. Throughout the process we looked at how to use Mocks to
 controller dependencies and transform integration tests into unit
 tests. Finally we enabled the system tests to run in a real browser.
 
+Here is the code/lecture URL: (https://github.com/rob0t7/lhl-lectures/tree/master/lhl-tdd)
 ## Running the code
 
 To run the demo do:
